@@ -1,0 +1,14 @@
+/*.js
+**/*.js
+node_modules
+build
+/src/reac-app-env.d.ts
+
+tsconfig.json
+README.md
+LICENSE
+
+package.json
+yarn-error.log
+yarn.lock
+.eslintrc.json
