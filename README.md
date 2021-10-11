@@ -15,12 +15,13 @@ This project idea is to allow people to allow people to share presents suggestio
 - Add gifts categories
 - Share wishlists with other people
 - Check an item as owned
-  
+
 ## Tech Stack
 
 **Client:** React, Typescript, Stitches, radix-ui
 
 **Server:** MirageJS _(under construction)_
+
 ## Run Locally
 
 Clone the project
@@ -47,12 +48,11 @@ Start the server
   yarn start
 ```
 
-  
 ## Acknowledgements
 
- - [radix-ui](https://www.radix-ui.com/docs/primitives/overview/introduction)
- - [stitches](https://stitches.dev/docs/installation)
- - [readme.so](https://readme.so)
+- [radix-ui](https://www.radix-ui.com/docs/primitives/overview/introduction)
+- [stitches](https://stitches.dev/docs/installation)
+- [readme.so](https://readme.so)
 
 ## Authors
 
