@@ -1,23 +1,19 @@
 <h1>
   🎁 gift-me
-  <img align="right" src="https://img.shields.io/github/license/elicavalheiro/gift-me?">&ensp;
-  <img align="right" src="https://img.shields.io/github/repo-size/elicavalheiro/gift-me">&ensp;
-  <img align="right" src="https://img.shields.io/github/last-commit/elicavalheiro/gift-me">
+  <img src="https://img.shields.io/github/license/elicavalheiro/gift-me?">
+  <img src="https://img.shields.io/github/repo-size/elicavalheiro/gift-me">
+  <img src="https://img.shields.io/github/last-commit/elicavalheiro/gift-me">
 </h1>
 
 This project idea is to allow people to allow people to share presents suggestions with friends or simply to have a personal wishlist.
 
+<img width="500" align="right" src="https://user-images.githubusercontent.com/36828798/136843798-a9bbc6c6-6e79-4d3a-a3d2-f915b5d898fc.png">
 
-## Screenshots
-
-![How does this app looks?](https://via.placeholder.com/468x300?text=How+Does+This+App+Looks+?)
-
-  
 ## Features
 
 - Manage wishlists
-- Add presents categories
-- Share a wishlist with other people
+- Add gifts categories
+- Share wishlists with other people
 - Check an item as owned
   
 ## Tech Stack
@@ -52,13 +48,12 @@ Start the server
 ```
 
   
-## Authors
-
-- [@elicavalheiro](https://github.com/elicavalheiro)
-
-  
 ## Acknowledgements
 
  - [radix-ui](https://www.radix-ui.com/docs/primitives/overview/introduction)
  - [stitches](https://stitches.dev/docs/installation)
  - [readme.so](https://readme.so)
+
+## Authors
+
+- [@elicavalheiro](https://github.com/elicavalheiro)
