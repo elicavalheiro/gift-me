@@ -1,10 +1,9 @@
-<p>
+<h1>
+  🎁 gift-me
   <img align="right" src="https://img.shields.io/github/license/elicavalheiro/gift-me?">&ensp;
   <img align="right" src="https://img.shields.io/github/repo-size/elicavalheiro/gift-me">&ensp;
   <img align="right" src="https://img.shields.io/github/last-commit/elicavalheiro/gift-me">
-</p>
-
-# 🎁 gift-me
+</h1>
 
 This project idea is to allow people to allow people to share presents suggestions with friends or simply to have a personal wishlist.
 
