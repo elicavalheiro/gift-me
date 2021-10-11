@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
+import { globalStyles } from './styles/globalStyles';
 
 function App(): JSX.Element {
+  globalStyles();
+
   useEffect(() => {
     fetch('http://localhost:3000/api/gifts').then((response) =>
       response.json()
