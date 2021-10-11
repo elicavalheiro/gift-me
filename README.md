@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/github/last-commit/elicavalheiro/gift-me">
 </h1>
 
-This project idea is to allow people to allow people to share presents suggestions with friends or simply to have a personal wishlist.
+An app that allows people to share gifts suggestions with friends or simply to have a personal wishlist.
 
 <img width="500" align="right" src="https://user-images.githubusercontent.com/36828798/136843798-a9bbc6c6-6e79-4d3a-a3d2-f915b5d898fc.png">
 
