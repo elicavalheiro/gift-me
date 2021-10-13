@@ -4,7 +4,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { makeServer } from './server';
 
-makeServer({ environment: 'development' });
+if (process.env.NODE_ENV === 'production') {
+  makeServer({ environment: 'production' });
+} else {
+  makeServer({ environment: 'development' });
+}
 
 ReactDOM.render(
   <React.StrictMode>
