@@ -11,6 +11,7 @@ export function makeServer({ environment = 'development' } = {}) {
 
     seeds(server) {
       server.create('gift', {
+        /* @ts-ignore */
         title: 'Notebook',
         description:
           'Notebook Acer 17”, SSD 512GB, 16GB de RAM, Placa de vídeo GTX 1650 Super',
@@ -22,6 +23,7 @@ export function makeServer({ environment = 'development' } = {}) {
       });
 
       server.create('category', {
+        /* @ts-ignore */
         name: 'Electronics',
       });
     },
@@ -29,8 +31,10 @@ export function makeServer({ environment = 'development' } = {}) {
     routes() {
       this.namespace = 'api';
 
+      /* @ts-ignore */
       this.get('/gifts', (schema) => schema.gifts.all());
 
+      /* @ts-ignore */
       this.get('/categories', (schema) => schema.categories.all());
     },
   });

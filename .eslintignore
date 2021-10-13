@@ -3,6 +3,7 @@
 node_modules
 build
 /src/reac-app-env.d.ts
+/src/server.ts
 
 tsconfig.json
 README.md
@@ -11,4 +12,4 @@ LICENSE
 package.json
 yarn-error.log
 yarn.lock
-.eslintrc.json
+.eslintrc.jsons
