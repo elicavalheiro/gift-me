@@ -38,7 +38,7 @@
       "yarn prettier"
     ],
     "*.@(json)": [
-      "yarn format"
+      "yarn prettier"
     ]
   },
   "eslintConfig": {
