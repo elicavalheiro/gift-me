@@ -3,6 +3,7 @@
   <img src="https://img.shields.io/github/license/elicavalheiro/gift-me?">
   <img src="https://img.shields.io/github/repo-size/elicavalheiro/gift-me">
   <img src="https://img.shields.io/github/last-commit/elicavalheiro/gift-me">
+  <img src="https://api.netlify.com/api/v1/badges/267a5d7c-15f6-4c95-bf63-a2b82b296e67/deploy-status" />
 </h1>
 
 An app that allows people to share gifts suggestions with friends or simply to have a personal wishlist.
