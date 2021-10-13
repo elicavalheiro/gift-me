@@ -8,11 +8,11 @@ function App(): JSX.Element {
   globalStyles();
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/gifts').then((response) =>
+    fetch(`${process.env.BASE_URL}/api/gifts`).then((response) =>
       response.json()
     );
 
-    fetch('http://localhost:3000/api/categories').then((response) =>
+    fetch(`${process.env.BASE_URL}/api/categories`).then((response) =>
       response.json()
     );
   }, []);
