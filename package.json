@@ -33,11 +33,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.@(ts|tsx|js|jsx)": [
       "yarn lint",
       "yarn prettier"
     ],
-    "*.{json}": [
+    "*.@(json)": [
       "yarn prettier"
     ]
   },
