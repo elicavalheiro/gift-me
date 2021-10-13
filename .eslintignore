@@ -12,4 +12,4 @@ LICENSE
 package.json
 yarn-error.log
 yarn.lock
-.eslintrc.jsons
+.eslintrc.json
