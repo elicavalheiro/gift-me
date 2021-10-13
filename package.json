@@ -25,7 +25,8 @@
     "clean": "rm -R node_modules",
     "lint": "eslint src/*.{ts,tsx,js,jsx}",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commitmsg": "prepare-commit-msg"
   },
   "config": {
     "commitizen": {
