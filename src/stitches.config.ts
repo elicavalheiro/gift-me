@@ -9,6 +9,7 @@ import {
   redDark,
 } from '@radix-ui/colors';
 import { createStitches } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 
 export const {
   styled,
@@ -31,18 +32,20 @@ export const {
       ...blackA,
       ...redDark,
 
-      accent1: '$redDark1',
-      accent2: '$redDark2',
-      accent3: '$redDark3',
-      accent4: '$redDark4',
-      accent5: '$redDark5',
-      accent6: '$redDark6',
-      accent7: '$redDark7',
-      accent8: '$redDark8',
-      accent9: '$redDark9',
-      accent10: '$redDark10',
-      accent11: '$redDark11',
-      accent12: '$redDark12',
+      accent1: '$red1',
+      accent2: '$red2',
+      accent3: '$red3',
+      accent4: '$red4',
+      accent5: '$red5',
+      accent6: '$red6',
+      accent7: '$red7',
+      accent8: '$red8',
+      accent9: '$red9',
+      accent10: '$red10',
+      accent11: '$red11',
+      accent12: '$red12',
+
+      white: '#fff',
     },
 
     fonts: {
@@ -170,3 +173,5 @@ export const {
     }),
   },
 });
+
+export type CSS = Stitches.CSS<typeof config>;

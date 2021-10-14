@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import { globalStyles } from './styles/globalStyles';
+import { Button } from './components/Button/Button';
 
 function App(): JSX.Element {
   globalStyles();
@@ -20,7 +21,7 @@ function App(): JSX.Element {
   return (
     <h1>
       Hello World <FontAwesomeIcon icon={faCoffee} />
-      Aaaaaa
+      <Button>Save</Button>
     </h1>
   );
 }
