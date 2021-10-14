@@ -5,7 +5,11 @@ type InputTextProps = {
   value: string;
 };
 
-export const InputText = ({ placeholder, value, ...rest }: InputTextProps): JSX.Element => (
+export const InputText = ({
+  placeholder,
+  value,
+  ...rest
+}: InputTextProps): JSX.Element => (
   <InputTextContainer
     type="text"
     value={value}
