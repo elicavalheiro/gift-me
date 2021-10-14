@@ -1,7 +1,7 @@
 import { VariantProps } from '@stitches/react';
 import { styled } from '../../stitches.config';
 
-export const Container = styled('button', {
+export const ButtonContainer = styled('button', {
   padding: '$small2 $medium3',
   borderRadius: '$medium',
   fontWeight: '$bold',
@@ -52,4 +52,4 @@ export const Container = styled('button', {
   },
 });
 
-export type ContainerVariants = VariantProps<typeof Container>;
+export type ButtonContainerVariants = VariantProps<typeof ButtonContainer>;
