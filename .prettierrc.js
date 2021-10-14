@@ -6,6 +6,6 @@ module.exports = {
   endOfLine: 'auto',
   trailingComma: 'es5',
   bracketSpacing: true,
-  allowParens: 'always',
+  arrowParens: 'always',
   singleQuote: true,
 };
