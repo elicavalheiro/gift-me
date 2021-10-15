@@ -1,7 +1,6 @@
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
-import { InputNumber } from './components/DataInput';
 import { globalStyles } from './styles/globalStyles';
 
 function App(): JSX.Element {
@@ -20,7 +19,6 @@ function App(): JSX.Element {
   return (
     <>
       Hello World <FontAwesomeIcon icon={faCoffee} />
-      <InputNumber value="0" />
     </>
   );
 }
