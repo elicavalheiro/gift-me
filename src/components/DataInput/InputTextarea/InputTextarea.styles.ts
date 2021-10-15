@@ -1,7 +1,8 @@
 import { styled } from '../../../stitches.config';
 
-export const InputTextContainer = styled('input', {
+export const InputTextareaContainer = styled('textarea', {
   width: '100%',
+
   padding: '$small2 $medium1',
   borderRadius: '$medium',
   background: 'transparent',

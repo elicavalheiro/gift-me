@@ -8,9 +8,9 @@ type ButtonProps = {
 export const Button = ({
   type = 'primary',
   children,
-  ...props
+  ...rest
 }: ButtonProps): JSX.Element => (
-  <ButtonContainer type={type} {...props}>
+  <ButtonContainer type={type} {...rest}>
     {children}
   </ButtonContainer>
 );
