@@ -1,4 +1,4 @@
-import { InputTextContainer } from './InputText.styles';
+import * as S from './InputText.styles';
 
 type InputTextProps = {
   placeholder?: string;
@@ -10,7 +10,7 @@ export const InputText = ({
   value,
   ...rest
 }: InputTextProps): JSX.Element => (
-  <InputTextContainer
+  <S.InputTextContainer
     type="text"
     value={value}
     placeholder={placeholder}

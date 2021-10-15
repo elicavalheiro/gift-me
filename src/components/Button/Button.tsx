@@ -1,16 +1,16 @@
-import { ButtonContainer, ButtonContainerVariants } from './Button.styles';
+import * as S from './Button.styles';
 
 type ButtonProps = {
   type?: 'primary' | 'secondary' | 'rounded' | 'ghost';
   children: React.ReactNode;
-} & ButtonContainerVariants;
+} & S.ButtonContainerVariants;
 
 export const Button = ({
   type = 'primary',
   children,
   ...rest
 }: ButtonProps): JSX.Element => (
-  <ButtonContainer type={type} {...rest}>
+  <S.ButtonContainer type={type} {...rest}>
     {children}
-  </ButtonContainer>
+  </S.ButtonContainer>
 );

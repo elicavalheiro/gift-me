@@ -1,7 +1,7 @@
 import * as S from './InputTextarea.styles';
 
 type InputTextareaProps = {
-  value?: string;
+  value: string;
   placeholder?: string;
 };
 
@@ -9,7 +9,7 @@ export const InputTextarea = ({
   value,
   placeholder,
   ...rest
-}: InputTextareaProps) => (
+}: InputTextareaProps): JSX.Element => (
   <S.InputTextareaContainer
     name="textarea"
     rows={3}
