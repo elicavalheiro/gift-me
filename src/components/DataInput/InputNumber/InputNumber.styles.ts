@@ -1,11 +1,11 @@
+import NumberFormat from 'react-number-format';
 import { styled } from '../../../stitches.config';
 
-export const InputTextContainer = styled('input', {
-  width: '100%',
+export const InputNumberContainer = styled(NumberFormat, {
   padding: '$small2 $medium1',
   borderRadius: '$medium',
   background: 'transparent',
-  border: '2px solid $mauve7',
+  border: '2px solid $green7',
   outline: 'none',
   color: '$mauve12',
   transition: 'all ease 0.2s',
@@ -15,7 +15,7 @@ export const InputTextContainer = styled('input', {
   },
 
   '&:focus': {
-    border: '2px solid $accent9',
+    border: '2px solid $green9',
   },
 
   '&:disabled': {

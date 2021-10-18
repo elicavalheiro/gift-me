@@ -1,7 +1,6 @@
-import { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect } from 'react';
 import { globalStyles } from './styles/globalStyles';
 import { Checkbox } from './components/Checkbox/Checkbox';
 
