@@ -1,8 +1,7 @@
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
+import { Icon } from './components/Icon/Icon';
 import { globalStyles } from './styles/globalStyles';
-import { Checkbox } from './components/Checkbox/Checkbox';
 
 function App(): JSX.Element {
   globalStyles();
@@ -19,8 +18,7 @@ function App(): JSX.Element {
 
   return (
     <>
-      Hello World <FontAwesomeIcon icon={faCoffee} />
-      <Checkbox>Label</Checkbox>
+      Hello World <Icon icon={faCoffee} iconSize={20} />
     </>
   );
 }
