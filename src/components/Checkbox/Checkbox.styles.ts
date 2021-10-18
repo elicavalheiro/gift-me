@@ -5,7 +5,7 @@ export const CheckboxContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   padding: '$small1',
-})
+});
 
 export const CheckboxRoot = styled(CheckboxPrimitive.Root, {
   all: 'unset',
@@ -24,7 +24,7 @@ export const CheckboxRoot = styled(CheckboxPrimitive.Root, {
 
   '&[data-state=checked]': {
     background: '$green4',
-    boxShadow: '0 0 0 2px $colors$green9'
+    boxShadow: '0 0 0 2px $colors$green9',
   },
 
   '&:disabled': {
@@ -32,19 +32,19 @@ export const CheckboxRoot = styled(CheckboxPrimitive.Root, {
     background: '$mauve6',
     color: '$mauve10',
     boxShadow: '0 0 0 2px $colors$mauve10',
-  }
+  },
 });
 
 export const CheckboxIndicator = styled(CheckboxPrimitive.Indicator, {
   color: '$green9',
 
   '&[data-disabled]': {
-    color: '$mauve10'
-  }
+    color: '$mauve10',
+  },
 });
 
 export const CheckboxLabel = styled('label', {
   marginLeft: '$small2',
   color: '$mauve12',
   userSelect: 'none',
-})
+});
