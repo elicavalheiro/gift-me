@@ -3,7 +3,6 @@ import { styled } from '../../stitches.config';
 
 export const CheckboxContainer = styled('div', {
   display: 'flex',
-  alignItems: 'center',
   padding: '$small1',
 });
 
