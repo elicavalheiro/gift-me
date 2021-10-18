@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import { globalStyles } from './styles/globalStyles';
+import { Checkbox } from './components/Checkbox/Checkbox';
 
 function App(): JSX.Element {
   globalStyles();
@@ -20,6 +21,7 @@ function App(): JSX.Element {
   return (
     <>
       Hello World <FontAwesomeIcon icon={faCoffee} />
+      <Checkbox>Label</Checkbox>
     </>
   );
 }
