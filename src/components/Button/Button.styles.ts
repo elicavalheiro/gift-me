@@ -13,7 +13,7 @@ export const ButtonContainer = styled('button', {
       primary: {
         backgroundColor: '$accent9',
         color: '$accent12',
-        border: 'none',
+        border: '1px solid transparent',
 
         '&:hover': {
           backgroundColor: '$accent8',
@@ -32,7 +32,7 @@ export const ButtonContainer = styled('button', {
         borderRadius: '$circle',
         backgroundColor: '$accent9',
         color: '$accent12',
-        border: 'none',
+        border: '1px solid transparent',
         padding: '$small2 $medium1',
 
         '&:hover': {
@@ -41,7 +41,7 @@ export const ButtonContainer = styled('button', {
       },
       ghost: {
         backgroundColor: 'transparent',
-        border: 'none',
+        border: '1px solid transparent',
         color: '$accent9',
 
         '&:hover': {

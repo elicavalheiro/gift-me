@@ -1,10 +1,13 @@
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Button } from './components/Button/Button';
 import { Card } from './components/Card/Card';
+import { Dialog, DialogContent, DialogTrigger } from './components/Dialog';
 import { Icon } from './components/Icon/Icon';
 import { globalStyles } from './styles/globalStyles';
 
 function App(): JSX.Element {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   globalStyles();
 
   useEffect(() => {
@@ -36,6 +39,30 @@ function App(): JSX.Element {
           ]}
           price="5749,90"
         />
+
+        <Dialog isOpen={isDialogOpen}>
+          <DialogTrigger>
+            <Button onClick={() => setIsDialogOpen(true)} type="primary">
+              Open Dialog
+            </Button>
+          </DialogTrigger>
+          <DialogContent
+            title="Title"
+            closeDialog={() => setIsDialogOpen(false)}
+            cancelButton={
+              <Button type="secondary" onClick={() => setIsDialogOpen(false)}>
+                Cancel
+              </Button>
+            }
+            successButton={
+              <Button type="primary" onClick={() => setIsDialogOpen(false)}>
+                Save
+              </Button>
+            }
+          >
+            Content...
+          </DialogContent>
+        </Dialog>
       </div>
     </>
   );
