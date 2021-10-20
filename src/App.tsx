@@ -1,14 +1,17 @@
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faHome, faList } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import { Button } from './components/Button/Button';
 import { Card } from './components/Card/Card';
 import { Dialog, DialogContent, DialogTrigger } from './components/Dialog';
 import { Dropdown, DropdownItem } from './components/Dropdown/Dropdown';
 import { Icon } from './components/Icon/Icon';
+import { Menu } from './components/Menu/Menu';
+import { MenuItem } from './components/Menu/MenuItem/MenuItem';
 import { globalStyles } from './styles/globalStyles';
 
 function App(): JSX.Element {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isMenuCollapsed, setIsMenuCollapsed] = useState(false);
   globalStyles();
 
   useEffect(() => {
@@ -23,6 +26,17 @@ function App(): JSX.Element {
 
   return (
     <>
+      <Menu
+        collapsed={isMenuCollapsed}
+        onCollapseChange={() => setIsMenuCollapsed(!isMenuCollapsed)}
+      >
+        <MenuItem icon={faHome}>Home</MenuItem>
+        <MenuItem hasSubItem icon={faList}>
+          Categories
+        </MenuItem>
+        <MenuItem isSubItem>Home</MenuItem>
+      </Menu>
+
       <div style={{ padding: 20 }}>
         <h2 style={{ margin: 10 }}>
           Hello World <Icon icon={faCoffee} iconSize={20} />
