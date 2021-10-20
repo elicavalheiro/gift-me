@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button } from './components/Button/Button';
 import { Card } from './components/Card/Card';
 import { Dialog, DialogContent, DialogTrigger } from './components/Dialog';
+import { Dropdown, DropdownItem } from './components/Dropdown/Dropdown';
 import { Icon } from './components/Icon/Icon';
 import { globalStyles } from './styles/globalStyles';
 
@@ -63,6 +64,12 @@ function App(): JSX.Element {
             Content...
           </DialogContent>
         </Dialog>
+
+        <Dropdown trigger={<Button type="secondary">Dropdown</Button>}>
+          <DropdownItem>Manage Categories</DropdownItem>
+          <DropdownItem disabled>Settings</DropdownItem>
+          <DropdownItem disabled>Logout</DropdownItem>
+        </Dropdown>
       </div>
     </>
   );
