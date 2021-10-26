@@ -1,6 +1,6 @@
 import { styled } from '../../../stitches.config';
 
-export const MenuItemContainer = styled('a', {
+export const SidebarItemContainer = styled('a', {
   cursor: 'pointer',
   backgroundColor: 'transparent',
   height: '$large2',

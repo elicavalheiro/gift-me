@@ -1,10 +1,10 @@
 import { styled } from '../../stitches.config';
 
-export const MenuContainer = styled('aside', {
+export const SidebarContainer = styled('aside', {
   display: 'flex',
 });
 
-export const MenuContent = styled('div', {
+export const SidebarContent = styled('div', {
   height: '100vh',
   background:
     'linear-gradient(180deg, $colors$accent9 7.03%, rgba(229, 72, 77, 0) 86.57%)',
@@ -25,7 +25,7 @@ export const MenuContent = styled('div', {
   },
 });
 
-export const MenuButton = styled('button', {
+export const SidebarButton = styled('button', {
   cursor: 'pointer',
   background: '$accent9',
   color: '$accent12',

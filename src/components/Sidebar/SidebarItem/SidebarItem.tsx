@@ -5,9 +5,9 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { Icon } from '../../Icon/Icon';
-import * as S from './MenuItem.styles';
+import * as S from './SidebarItem.styles';
 
-type MenuItemProps = {
+type SidebarItemProps = {
   icon?: IconProp;
   isActive?: boolean;
   hasSubItem?: boolean;
@@ -16,18 +16,18 @@ type MenuItemProps = {
   children: React.ReactNode;
 };
 
-export const MenuItem = ({
+export const SidebarItem = ({
   icon,
   isActive = false,
   hasSubItem = false,
   isSubItem = false,
   collapsed = false,
   children,
-}: MenuItemProps): JSX.Element => {
+}: SidebarItemProps): JSX.Element => {
   const arrow = collapsed ? faChevronDown : faChevronRight;
 
   return (
-    <S.MenuItemContainer
+    <S.SidebarItemContainer
       isActive={isActive}
       hasSubItem={hasSubItem}
       isSubItem={isSubItem}
@@ -43,6 +43,6 @@ export const MenuItem = ({
       {hasSubItem && (
         <Icon icon={arrow} iconSize={15} css={{ justifySelf: 'end' }} />
       )}
-    </S.MenuItemContainer>
+    </S.SidebarItemContainer>
   );
 };

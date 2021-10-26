@@ -5,13 +5,13 @@ import { Card } from './components/Card/Card';
 import { Dialog, DialogContent, DialogTrigger } from './components/Dialog';
 import { Dropdown, DropdownItem } from './components/Dropdown/Dropdown';
 import { Icon } from './components/Icon/Icon';
-import { Menu } from './components/Menu/Menu';
-import { MenuItem } from './components/Menu/MenuItem/MenuItem';
+import { Sidebar } from './components/Sidebar/Sidebar';
+import { SidebarItem } from './components/Sidebar/SidebarItem/SidebarItem';
 import { globalStyles } from './styles/globalStyles';
 
 function App(): JSX.Element {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [isMenuCollapsed, setIsMenuCollapsed] = useState(false);
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   globalStyles();
 
   useEffect(() => {
@@ -26,16 +26,16 @@ function App(): JSX.Element {
 
   return (
     <>
-      <Menu
-        collapsed={isMenuCollapsed}
-        onCollapseChange={() => setIsMenuCollapsed(!isMenuCollapsed)}
+      <Sidebar
+        collapsed={isSidebarCollapsed}
+        onCollapseChange={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
       >
-        <MenuItem icon={faHome}>Home</MenuItem>
-        <MenuItem hasSubItem icon={faList}>
+        <SidebarItem icon={faHome}>Home</SidebarItem>
+        <SidebarItem hasSubItem icon={faList}>
           Categories
-        </MenuItem>
-        <MenuItem isSubItem>Home</MenuItem>
-      </Menu>
+        </SidebarItem>
+        <SidebarItem isSubItem>Home</SidebarItem>
+      </Sidebar>
 
       <div style={{ padding: 20 }}>
         <h2 style={{ margin: 10 }}>
