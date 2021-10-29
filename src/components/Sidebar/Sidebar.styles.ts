@@ -2,6 +2,9 @@ import { styled } from '../../stitches.config';
 
 export const SidebarContainer = styled('aside', {
   display: 'flex',
+  position: 'sticky',
+  top: 0,
+  left: 0,
 });
 
 export const SidebarContent = styled('div', {
@@ -11,15 +14,18 @@ export const SidebarContent = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  width: '200px',
+  padding: '$small3',
+
+  transition: 'transform 0.2s ease',
 
   variants: {
     collapsed: {
       true: {
-        width: '$small2',
+        transform: 'translateX(-190px)',
       },
       false: {
-        padding: '$small3',
-        width: '200px',
+        transform: 'translateX(0)',
       },
     },
   },
@@ -35,4 +41,16 @@ export const SidebarButton = styled('button', {
   borderRadius: '0px $medium $medium 0px',
   marginTop: '$medium1',
   marginLeft: '-$small1',
+  transition: 'transform 0.2s ease',
+
+  variants: {
+    collapsed: {
+      true: {
+        transform: 'translateX(-190px)',
+      },
+      false: {
+        transform: 'translateX(0)',
+      },
+    },
+  },
 });

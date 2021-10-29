@@ -14,10 +14,8 @@ export const Sidebar = ({
   children,
 }: SidebarProps): JSX.Element => (
   <S.SidebarContainer>
-    <S.SidebarContent collapsed={collapsed}>
-      {!collapsed && children}
-    </S.SidebarContent>
-    <S.SidebarButton onClick={onCollapseChange}>
+    <S.SidebarContent collapsed={collapsed}>{children}</S.SidebarContent>
+    <S.SidebarButton collapsed={collapsed} onClick={onCollapseChange}>
       <Icon icon={faBars} iconSize={17} />
     </S.SidebarButton>
   </S.SidebarContainer>
