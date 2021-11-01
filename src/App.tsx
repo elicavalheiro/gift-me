@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button } from './components/Button/Button';
 import { Card } from './components/Card/Card';
 import { Dialog, DialogContent, DialogTrigger } from './components/Dialog';
-import { Dropdown, DropdownItem } from './components/Dropdown/Dropdown';
+import { Header } from './components/Header/Header';
 import { Icon } from './components/Icon/Icon';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { SidebarItem } from './components/Sidebar/SidebarItem/SidebarItem';
@@ -26,6 +26,8 @@ function App(): JSX.Element {
 
   return (
     <>
+      <Header />
+
       <Sidebar
         collapsed={isSidebarCollapsed}
         onCollapseChange={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
@@ -78,12 +80,6 @@ function App(): JSX.Element {
             Content...
           </DialogContent>
         </Dialog>
-
-        <Dropdown trigger={<Button type="secondary">Dropdown</Button>}>
-          <DropdownItem>Manage Categories</DropdownItem>
-          <DropdownItem disabled>Settings</DropdownItem>
-          <DropdownItem disabled>Logout</DropdownItem>
-        </Dropdown>
       </div>
     </>
   );

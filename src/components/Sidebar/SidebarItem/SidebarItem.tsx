@@ -1,6 +1,5 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
-  faHome,
   faChevronDown,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
