@@ -1,16 +1,14 @@
-import { faCoffee, faHome, faList } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faList } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
-import { Button } from './components/Button/Button';
-import { Card } from './components/Card/Card';
-import { Dialog, DialogContent, DialogTrigger } from './components/Dialog';
+import { Route, Routes } from 'react-router';
 import { Header } from './components/Header/Header';
-import { Icon } from './components/Icon/Icon';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { SidebarItem } from './components/Sidebar/SidebarItem/SidebarItem';
+import { CategoryPage } from './pages/Category/Category';
+import { HomePage } from './pages/Home/Home';
 import { globalStyles } from './styles/globalStyles';
 
 function App(): JSX.Element {
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   globalStyles();
 
@@ -39,48 +37,10 @@ function App(): JSX.Element {
         <SidebarItem isSubItem>Home</SidebarItem>
       </Sidebar>
 
-      <div style={{ padding: 20 }}>
-        <h2 style={{ margin: 10 }}>
-          Hello World <Icon icon={faCoffee} iconSize={20} />
-        </h2>
-
-        <Card
-          title="Notebook"
-          imageUrl="https://source.unsplash.com/1600x900/?laptop"
-          link="#"
-          description="Notebook Acer 17”, SSD 512GB, 16GB de RAM, Placa de vídeo GTX 1650 Super"
-          badges={[
-            { id: 1, name: 'games' },
-            { id: 2, name: 'music' },
-            { id: 3, name: 'clothes' },
-          ]}
-          price="5749,90"
-        />
-
-        <Dialog isOpen={isDialogOpen}>
-          <DialogTrigger>
-            <Button onClick={() => setIsDialogOpen(true)} type="primary">
-              Open Dialog
-            </Button>
-          </DialogTrigger>
-          <DialogContent
-            title="Title"
-            closeDialog={() => setIsDialogOpen(false)}
-            cancelButton={
-              <Button type="secondary" onClick={() => setIsDialogOpen(false)}>
-                Cancel
-              </Button>
-            }
-            successButton={
-              <Button type="primary" onClick={() => setIsDialogOpen(false)}>
-                Save
-              </Button>
-            }
-          >
-            Content...
-          </DialogContent>
-        </Dialog>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/category" element={<CategoryPage />} />
+      </Routes>
     </>
   );
 }
