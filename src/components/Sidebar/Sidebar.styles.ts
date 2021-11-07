@@ -22,7 +22,7 @@ export const SidebarContent = styled('div', {
   variants: {
     collapsed: {
       true: {
-        transform: 'translateX(-190px)',
+        transform: 'translateX(-195px)',
       },
       false: {
         transform: 'translateX(0)',
@@ -46,7 +46,7 @@ export const SidebarButton = styled('button', {
   variants: {
     collapsed: {
       true: {
-        transform: 'translateX(-190px)',
+        transform: 'translateX(-195px)',
       },
       false: {
         transform: 'translateX(0)',

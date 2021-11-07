@@ -5,9 +5,16 @@ export const CardContainer = styled('div', {
   background: '$mauve2',
   padding: '$medium2',
   borderRadius: '$large',
-  maxWidth: '400px',
   boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.12)',
   border: '1px solid $mauve3',
+
+  variants: {
+    largeCard: {
+      true: {
+        // TODO: create logic for a large card
+      },
+    },
+  },
 });
 
 export const CardImage = styled('img', {

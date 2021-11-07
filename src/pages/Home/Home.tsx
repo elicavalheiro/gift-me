@@ -1,1 +1,7 @@
-export const HomePage = (): JSX.Element => <h1>Home</h1>;
+import { RecentAdded } from '../../components/RecentAdded/RecentAdded';
+
+export const HomePage = (): JSX.Element => (
+  <>
+    <RecentAdded />
+  </>
+);
