@@ -16,8 +16,13 @@ export const SidebarContent = styled('div', {
   alignItems: 'center',
   width: '200px',
   padding: '$small3',
+  pointerEvents: 'none',
 
   transition: 'transform 0.2s ease',
+
+  '& div': {
+    pointerEvents: 'all',
+  },
 
   variants: {
     collapsed: {
@@ -42,6 +47,7 @@ export const SidebarButton = styled('button', {
   marginTop: '$medium1',
   marginLeft: '-$small1',
   transition: 'transform 0.2s ease',
+  pointerEvents: 'all',
 
   variants: {
     collapsed: {
