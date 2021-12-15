@@ -3,6 +3,7 @@ import * as S from './RecentAdded.styles';
 
 export const RecentAdded = (): JSX.Element => (
   <S.RecentAddedContainer>
+    <S.RecentAddedFlag>RECENT ADDED</S.RecentAddedFlag>
     <Card
       title="NOTEBOOK"
       description="Notebook Acer 17”, SSD 512GB, 16GB de RAM, Placa de vídeo GTX 1650 Super"
